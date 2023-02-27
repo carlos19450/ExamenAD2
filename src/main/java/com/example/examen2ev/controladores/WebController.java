@@ -13,7 +13,7 @@ public class WebController {
     @RequestMapping(value = {"/", "/usuarios"})
     public String index(Model model) {
         model.addAttribute("usuarios", usuarioServicio.findAllUsuarios());
-        return "index";
+        return "usuarios";
     }
 
     @RequestMapping(value = "/usuarios")
